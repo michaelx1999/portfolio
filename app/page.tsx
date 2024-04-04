@@ -1,9 +1,11 @@
-import Intro from "@/components/intro";
+import About from "@/components/about"
+import Intro from "@/components/intro"
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center gap-y-5">
+    <main className="flex flex-col justify-center items-center gap-40">
       <Intro />
+      <About />
     </main>
   )
 }
