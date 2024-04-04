@@ -1,12 +1,15 @@
 import React from "react"
 import { CgWorkAlt } from "react-icons/cg"
+import cicd from "@/public/cicd.webp"
+import portfolio from "@/public/portfolio.png"
+import { StaticImageData } from "next/image"
 
-interface Link {
+interface LinkData {
   name: string
   hash: string
 }
 
-export const links: Link[] = [
+export const links: LinkData[] = [
   {
     name: "Home",
     hash: "#home"
@@ -33,7 +36,30 @@ export const links: Link[] = [
   }
 ] as const
 
-interface Experience {
+export interface ProjectData {
+  title: string
+  description: string
+  tags: string[]
+  imageUrl: StaticImageData
+}
+
+export const projects: ProjectData[] = [
+  {
+    title: "CICD Pipeline",
+    description:
+      "Demonstrates a complete backend workflow, from testing, to building, then to deployment",
+    tags: ["Python", "FastAPI", "Testing", "AWS", "GitHub Action"],
+    imageUrl: cicd
+  },
+  {
+    title: "Portfolio",
+    description: "My portfolio page, demonstrates my design skill",
+    tags: ["HTML", "Tailwind CSS", "React", "Next Js"],
+    imageUrl: portfolio
+  }
+] as const
+
+interface ExperienceData {
   title: string
   company: string
   description: string
@@ -41,7 +67,7 @@ interface Experience {
   date: string
 }
 
-export const experiences: Experience[] = [
+export const experiences: ExperienceData[] = [
   {
     title: "Software Engineer Intern",
     company: "Symetra",
@@ -55,22 +81,6 @@ export const experiences: Experience[] = [
     description: "Arduino Uno: Sensor detection development",
     icon: React.createElement(CgWorkAlt),
     date: "Jun 2022 - Aug 2022"
-  }
-] as const
-
-interface Project {
-  title: string
-  description: string
-  tags: string[]
-  imageUrl: string
-}
-
-export const projects: Project[] = [
-  {
-    title: "CICD Pipeline",
-    description: "Demonstrates a complete backend workflow",
-    tags: ["Python", "FastAPI", "Testing", "AWS", "GitHub Action"],
-    imageUrl: ""
   }
 ] as const
 

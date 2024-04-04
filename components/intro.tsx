@@ -6,7 +6,7 @@ import { FaGithubSquare } from "react-icons/fa"
 
 export default function Intro() {
   return (
-    <section className=" space-y-5 w-full h-full">
+    <section className=" space-y-5 w-full h-full scroll-mt-28" id="home">
       <div className=" flex justify-center items-center">
         <Image
           src={photo}
