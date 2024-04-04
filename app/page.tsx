@@ -1,3 +1,9 @@
+import Intro from "@/components/intro";
+
 export default function Home() {
-  return <div>Home</div>
+  return (
+    <main className="flex justify-center items-center gap-y-5">
+      <Intro />
+    </main>
+  )
 }
