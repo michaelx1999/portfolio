@@ -29,10 +29,6 @@ export const links: LinkData[] = [
   {
     name: "Experience",
     hash: "#experience"
-  },
-  {
-    name: "Contact",
-    hash: "#contact"
   }
 ] as const
 

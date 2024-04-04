@@ -20,7 +20,7 @@ export default function Projects() {
 function Project({ title, description, tags, imageUrl }: ProjectData) {
   return (
     <a
-      className=" bg-gray-100 border border-black/5 w-full h-60 flex cursor-pointer hover:scale-110 transition"
+      className=" bg-gray-100 border border-black/5 rounded-xl w-full h-60 flex cursor-pointer hover:scale-110 transition"
       href="https://www.github.com/"
       target="_blank">
       <div className="w-1/2 p-5 h-full space-y-3">
@@ -35,7 +35,7 @@ function Project({ title, description, tags, imageUrl }: ProjectData) {
         </ul>
       </div>
       <div className="w-1/2 h-full">
-        <Image className="w-full h-full object-fill" src={imageUrl} alt={title} />
+        <Image className="w-full h-full object-fill rounded-xl" src={imageUrl} alt={title} />
       </div>
     </a>
   )
