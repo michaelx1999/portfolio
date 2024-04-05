@@ -9,9 +9,9 @@ export default function Home() {
     <main className="flex flex-col justify-center items-center gap-40">
       <Intro />
       <About />
-      <Projects />
       <Skills />
       <Experience />
+      <Projects />
     </main>
   )
 }
