@@ -42,15 +42,15 @@ export const projects: ProjectData[] = [
   {
     title: "CICD Pipeline",
     description:
-      "Developed a CRUD app using FastAPI and PostgreSQL with full test coverage and automated CI/CD via GitHub Actions, AWS ECR, and Docker.",
-    tags: ["Python", "FastAPI", "Testing", "GitHub Action"],
+      "Developed a CRUD app with full test coverage and automated CI/CD via GitHub Actions.",
+    tags: ["Python", "FastAPI", "Testing", "Docker", "GitHub Actions"],
     link: "https://github.com/michaelx1999/cicd",
     imageUrl: cicd
   },
   {
     title: "Portfolio",
     description:
-      "Developed a portfolio site with Next.js and TypeScript, emphasizing performance, UX, and code quality.",
+      "Developed a portfolio site, emphasizing performance, UX, and code quality.",
     tags: ["HTML", "Tailwind CSS", "React", "Next Js"],
     link: "https://github.com/michaelx1999/portfolio",
     imageUrl: portfolio
