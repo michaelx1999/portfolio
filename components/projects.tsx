@@ -17,11 +17,11 @@ export default function Projects() {
   )
 }
 
-function Project({ title, description, tags, imageUrl }: ProjectData) {
+function Project({ title, description, tags, link, imageUrl }: ProjectData) {
   return (
     <a
       className=" bg-gray-100 border border-black/5 rounded-xl w-full h-60 flex cursor-pointer hover:scale-110 transition"
-      href="https://www.github.com/"
+      href={link}
       target="_blank">
       <div className="w-1/2 p-5 h-full space-y-3">
         <h3 className=" text-2xl font-semibold">{title}</h3>
