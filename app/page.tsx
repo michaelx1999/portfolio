@@ -12,7 +12,6 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
-      <div className = "mb-20"></div>
     </main>
   )
 }
