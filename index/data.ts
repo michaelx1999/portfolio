@@ -58,15 +58,17 @@ export const projects: ProjectData[] = [
 interface ExperienceData {
   title: string
   company: string
+  location: string
   description: string
   icon: React.FunctionComponentElement<any>
   date: string
 }
 
-export const experiences: ExperienceData[] = [
+export const experience: ExperienceData[] = [
   {
     title: "Software Engineer Intern",
     company: "Symetra",
+    location:"Bellevue, WA",
     description: "Develop and maintain backend microservices & cloud infrastructure",
     icon: React.createElement(CgWorkAlt),
     date: "May 2023 - Aug 2023"
@@ -74,7 +76,8 @@ export const experiences: ExperienceData[] = [
   {
     title: "Software Engineer Intern",
     company: "NASA NYSG",
-    description: "Arduino Uno: Sensor detection development",
+    location:"Owego, NY",
+    description: "Sensor detection development using Arduino Uno",
     icon: React.createElement(CgWorkAlt),
     date: "Jun 2022 - Aug 2022"
   }
