@@ -21,12 +21,9 @@ export default function About() {
         About Me
       </h2>
       <p className="font-mdium text-lg text-gray-700 rounded-xl p-5 hover:scale-110 transition cursor-context-menu">
-        I have a deep passion for solving complex problems through innovative software solutions. My
+        I have a deep passion for solving complex problems through software solutions. My
         expertise spans a variety of programming languages and development frameworks, enabling me
-        to create efficient, robust, and scalable applications. I excel in collaborative
-        environments, where I leverage my strong communication skills to work effectively with
-        cross-functional teams, ensuring that every project benefits from a diverse range of
-        perspectives.
+        to create efficient, robust, and scalable applications. 
       </p>
     </section>
   )
